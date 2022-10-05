@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12</title>
+</head>
+
+<body>
+    <script>
+        let Nombre = prompt("ingrese su nombre porfavor");
+        let peso = parseInt(prompt("ingrese su peso en kg porfavor"));
+        let estatura = parseFloat(prompt("ingrese su estatura en metros porfavor"));
+        let IMC= (peso/(estatura*estatura));
+        console.log(IMC)
+        
+
+        if ((IMC < 18.5)) {
+            alert(Nombre  +  "su IMC es"  +  IMC  +  "tiene peso bajo");}
+        else if ((IMC >= 18.5 && IMC <= 24.9)) {
+            alert(Nombre  +  "su IMC es"  +  IMC  +  "tiene un peso normal");
+        } else if ((IMC >= 25 && IMC <= 29.9)) {
+            alert(Nombre +  "su IMC es"  +  IMC  +  "tiene sobrepeso");
+        }
+        else if ((IMC>=30 && IMC<=33.9)){
+            alert(Nombre  +  "su IMC es"  +  IMC  +  "tiene obesidad");
+        }
+        else{alert(Nombre  +  "su IMC es"  +  IMC  +  "tiene obesidad severa")}
+
+        
+
+    </script>
+</body>
+
+</html>
